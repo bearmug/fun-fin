@@ -1,0 +1,22 @@
+plugins {
+    id 'scala'
+    id 'org.scoverage' version '2.1.0'
+    id 'com.github.kt3k.coveralls' version '2.6.3'
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    // We use Scala 2.11 in our library project
+    compile 'org.scala-lang:scala-library:2.11.8'
+
+    // We use Scalatest for testing our library
+    testCompile 'junit:junit:4.12'
+    testCompile 'org.scalatest:scalatest_2.11:2.2.6'
+    testRuntime 'org.scala-lang.modules:scala-xml_2.11:1.0.5'
+
+    scoverage 'org.scoverage:scalac-scoverage-plugin_2.11:1.1.0'
+    scoverage 'org.scoverage:scalac-scoverage-runtime_2.11:1.1.0'
+}

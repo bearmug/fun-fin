@@ -110,3 +110,5 @@ With this minimalistic setup we`ve been able to:
 - generate project from the scratch
 - raise essential integrations
 - generate dummy class plus test
+
+Pomodoros spent: 2 for development + 1 for documentation.

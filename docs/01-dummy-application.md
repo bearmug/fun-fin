@@ -84,4 +84,29 @@ this repo directly at Codacy configuration page.
 
 
 ### Sample class and test 
+Very basic class raised for the project. Just to prove that Scala
+code compiled there:
+```scala
+package org.bearmug.funfin
 
+class Quote {
+  def generate(): Int = 1
+}
+```
+
+The same is true for test suite:
+```scala
+@RunWith(classOf[JUnitRunner])
+class QuoteSuite extends FunSuite {
+  test("quote return 1") {
+    def quote = new Quote()
+    assert(quote.generate == 1)
+  }
+}
+```
+
+## Summary
+With this minimalistic setup we`ve been able to:
+- generate project from the scratch
+- raise essential integrations
+- generate dummy class plus test
